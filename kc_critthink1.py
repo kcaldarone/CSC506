@@ -4,7 +4,6 @@ def linearSearch(db, target):
             return item
     return None
 
-# Sample marketplace database
 marketplace = [
     {"id": 1, "name": "Laptop", "price": 1000},
     {"id": 2, "name": "Smartphone", "price": 500},
@@ -12,8 +11,8 @@ marketplace = [
     {"id": 4, "name": "Keyboard", "price": 70},
 ]
 
-# Get user input
-requestedItem = input("What item are you looking for in the marketplace? ")
+requestedItem = input("Hello! What item are you looking for in the marketplace?")
 result = linearSearch(marketplace, requestedItem)
 
 print(f"Item found: {result}" if result else "Item not found.")
+
