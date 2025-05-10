@@ -95,7 +95,7 @@ def compareSorts():
     }
 
     for size in sizes:
-        print(f"\n--- List Size: {size} ---")
+        print(f"\nList Size: {size}")
         for inputName, generator in inputTypes.items():
             arr = generator(size)
             print(f"\nInput Type: {inputName}")
