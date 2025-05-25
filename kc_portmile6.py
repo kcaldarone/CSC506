@@ -102,9 +102,6 @@ def timeSortingAlgorithm(sortFunc, arr, inPlace=True):
     tracemalloc.stop()
     return endTime - startTime, peak
 
-# — Main Comparator
-#Runs sorting algorithms on different input types and sizes, recording timing data
-#UPDATED: New version of compareSorts that also returns space usage
 def compareSortsWithSpace():
     algorithms = {
         "Bubble Sort": (bubbleSort, True),
@@ -125,9 +122,6 @@ def compareSortsWithSpace():
 
     return results, space_results
 
-# — Multi-Run Comparator with Ranking System 
-#Will run the compareSorts() function 100 times and compress the data for better averaging and analysis
-#UPDATED: in order to take space results as well
 def collectRunsWithSpace(numRuns=50): #lowered run count as it was a lot for my laptop to load
     overallTime = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
     overallSpace = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
